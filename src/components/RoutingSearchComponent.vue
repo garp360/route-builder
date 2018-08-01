@@ -5,6 +5,7 @@
                 :rowData='rowData'
                 :onGridReady='onGridReady'
                 :rowDataChanged='onRowDataChanged'
+                :selectionChanged='onSelectionChanged'
                 :gridSizeChanged='onGridSizeChanged'
                 :rowClicked='onRowClicked'
                 :pagination=true
@@ -43,6 +44,10 @@ export default {
       })
     },
     onRowClicked () {
+      // var selectedRows = this.gridOptions.api.getSelectedRows()
+      // this.$store.commit('activate', selectedRows[0])
+    },
+    onSelectionChanged () {
       var selectedRows = this.gridOptions.api.getSelectedRows()
       this.$store.commit('activate', selectedRows[0])
     },

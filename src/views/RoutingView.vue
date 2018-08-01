@@ -25,7 +25,11 @@ export default {
   },
   methods: {
    
-  }
+  },
+  beforeRouteLeave (to, from, next) {
+    this.$store.commit('activate', {})
+    next()
+  },
 }
 
 </script>

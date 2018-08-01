@@ -2,9 +2,9 @@
   <div>
     <v-system-bar id="routing-action-bar" window color="white">
       <v-spacer></v-spacer>
-      <v-btn color="white" :disabled="!canCopy" round light><v-icon color="black">file_copy</v-icon>Copy</v-btn>
-      <v-btn color="white" :disabled="!canCopy" round light @click="showResequence()"><v-icon color="black">low_priority</v-icon>Resequence</v-btn>
-      <v-btn color="primary" darken-3 round dark @click="create()"><v-icon color="white">add</v-icon>New</v-btn>
+      <v-btn color="white" :disabled="!canCopy" light><v-icon color="black">file_copy</v-icon>Copy</v-btn>
+      <v-btn color="white" :disabled="!canCopy" light @click="showResequence()"><v-icon color="black">low_priority</v-icon>Resequence</v-btn>
+      <v-btn color="primary" darken-3 dark @click="create()"><v-icon color="white">add</v-icon>New</v-btn>
     </v-system-bar>
     <v-layout row justify-center>
       <v-dialog v-model="resequenceDialog" persistent max-width="500px">
@@ -44,7 +44,7 @@
             </v-card-text>
             <v-card-actions class='footer'>
               <v-spacer></v-spacer>
-              <v-btn :disabled="this.$v.$invalid" color="primary" @click.native="resequenceDialog = false;resequence();">Save</v-btn>
+              <v-btn :disabled="this.$v.$invalid" color="primary" @click.native="resequenceDialog = false;resequence();">Resequence</v-btn>
               <v-btn color="default" @click.native="resequenceDialog = false">Close</v-btn>
             </v-card-actions>
         </v-card>
