@@ -9,7 +9,11 @@ export default new Vuex.Store({
   },
   mutations: {
     activate ( state, route ) {
-      state.activeRoute = route;
+      if ( route && route.id ) {
+        state.activeRoute = route;
+      } else {
+        state.activeRoute = {}
+      }
     }
   },
   actions: {
