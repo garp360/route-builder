@@ -51,12 +51,7 @@
         <span>Route Builder v2.0</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon>
-        <v-icon>apps</v-icon>
-      </v-btn>
-      <v-btn icon>
-        <v-icon>notifications</v-icon>
-      </v-btn>
+      <span>Logged in as: Joe User - FRCSE</span>
     </v-toolbar>
     <v-content>
       <router-view></router-view>
