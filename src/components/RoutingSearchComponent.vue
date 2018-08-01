@@ -9,8 +9,9 @@
                 :gridSizeChanged='onGridSizeChanged'
                 :rowClicked='onRowClicked'
                 :pagination=true
-                :enableSorting="true"
-                :enableFilter="true"
+                :enableSorting=true
+                :showToolPanel=true
+                :enableFilter=true
                 rowSelection="single">
     </ag-grid-vue>
 </template>
