@@ -1,0 +1,83 @@
+{
+      "routes": [
+            {
+                  "id": 909319949,
+                  "route": 5676,
+                  "part": "1286-99",
+                  "workscope": "A1",
+                  "released": true
+            },
+            {
+                  "id": 909309449,
+                  "route": 5677,
+                  "part": "PKS.77777",
+                  "workscope": "AA",
+                  "released": true
+            },
+            {
+                  "id": 909309944,
+                  "route": 5678,
+                  "part": "F12.P-72JJD2N283772",
+                  "workscope": "M0",
+                  "released": true
+            },
+            {
+                  "id": 909305949,
+                  "route": 5679,
+                  "part": "2928383929M",
+                  "workscope": "KK",
+                  "released": true
+            },
+            {
+                  "id": 90221449,
+                  "route": 11883,
+                  "part": "2928383929M",
+                  "workscope": "B3",
+                  "released": true
+            },
+            {
+                  "id": 905685949,
+                  "activityStatus": "IN_PROGRESS",
+                  "route": 12703,
+                  "part": "2928383929M",
+                  "workscope": "S1",
+                  "released": true
+            }
+      ],
+      "operations": [
+            {
+                  "id": 39392,
+                  "route": 11883,
+                  "number": 10,
+                  "description": "Move this"
+            },
+            {
+                  "id": 39772,
+                  "route": 11883,
+                  "number": 20,
+                  "description": "Move that"
+            },
+            {
+                  "id": 39395,
+                  "route": 11883,
+                  "number": 30,
+                  "description": "Clean this"
+            }
+      ],
+      "settings": [
+            {
+                  "id": "routebuilder.garth.pidcock",
+                  "search": "advanced",
+                  "dashboard": [
+                        "X", "K", "M", "T"
+                  ] 
+            },
+            {
+                  "id": "routebuilder.default",
+                  "search": "simple",
+                  "dashboard": [
+                        "K", "M"
+                  ] 
+            }
+      ]
+}

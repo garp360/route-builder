@@ -1,0 +1,60 @@
+<template>
+  <v-card id='page' flat height="100%">
+    <v-card flat :class="{'h-20pct': $vuetify.breakpoint.smAndDown, 'h-10pct': $vuetify.breakpoint.mdAndUp}">
+      <routing-criteria-component></routing-criteria-component>
+    </v-card>
+    <v-card flat :class="{'h-80pct': $vuetify.breakpoint.smAndDown, 'h-90pct': $vuetify.breakpoint.mdAndUp}">
+      <routing-search-component></routing-search-component>
+    </v-card>
+  </v-card>
+</template>
+
+<script>
+import RoutingSearchComponent from '@/components/RoutingSearchComponent'
+import RoutingCriteriaComponent from '@/components/RoutingCriteriaComponent'
+
+export default {
+  data () {
+    return {
+      
+    }
+  },
+  components: {
+    RoutingSearchComponent,
+    RoutingCriteriaComponent
+  },
+  methods: {
+   
+  }
+}
+
+</script>
+
+<style>
+
+.h-10pct {
+  height:10%;
+}
+.h-90pct {
+  height:90%;
+}
+.h-20pct {
+  height:20%;
+}
+.h-80pct {
+  height:80%;
+}
+
+.ag-theme-balham .ag-cell-inline-editing select {
+    height: 100% !important;
+}
+
+.ag-theme-balham .ag-root {
+    border: none !important;
+}
+
+.ag-theme-balham .ag-paging-panel {
+    background-color: #cccccc !important;
+}
+</style>
+
